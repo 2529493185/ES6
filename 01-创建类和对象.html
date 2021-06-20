@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.创建类class 创佳绩一个 明星类
+        class Star {
+            constructor(uname, age) {
+                this.uname = uname;
+                this.age = age;
+            }
+            sing(song) {
+                // console.log('我唱歌');
+                //(1)我们类里面所有的函数不需要写function
+                //(2)多个函数（方法）之间不需要添加逗号分隔
+                console.log(this.uname + song);
+            }
+        }
+        //2.利用类创建对象 new
+        var ldh = new Star('刘德华', 18);
+        var zxy = new Star('张学友', 20);
+        console.log(zxy);
+        console.log(ldh);
+        ldh.sing('冰雨');
+        zxy.sing('李香兰');
+
+
+    </script>
+</body>
+
+</html>
